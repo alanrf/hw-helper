@@ -1,0 +1,62 @@
+[
+    {
+      "Objective": "Barracks",
+      "Points": 40,
+      "Opponents": 2,
+      "Total": 80
+    },
+    {
+      "Objective": "Mage Academy",
+      "Points": 40,
+      "Opponents": 2,
+      "Total": 80
+    },
+    {
+      "Objective": "Lighthouse",
+      "Points": 40,
+      "Opponents": 2,
+      "Total": 80
+    },
+    {
+      "Objective": "Bridge",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Spring of Elements",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Foundry",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Bastion of Ice",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Gates of Nature",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Bastion of Fire",
+      "Points": 60,
+      "Opponents": 3,
+      "Total": 120
+    },
+    {
+      "Objective": "Citadel",
+      "Points": 120,
+      "Opponents": 6,
+      "Total": 240
+    }
+  ]

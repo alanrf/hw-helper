@@ -1,0 +1,434 @@
+{
+    "categories": [
+        {
+            "color": "gray",
+            "total": "624",
+            "levels": [
+                {
+                    "level": "1",
+                    "essence": "0"
+                },
+                {
+                    "level": "2",
+                    "essence": "3"
+                },
+                {
+                    "level": "3",
+                    "essence": "5"
+                },
+                {
+                    "level": "4",
+                    "essence": "7"
+                },
+                {
+                    "level": "5",
+                    "essence": "9"
+                },
+                {
+                    "level": "6",
+                    "essence": "11"
+                },
+                {
+                    "level": "7",
+                    "essence": "13"
+                },
+                {
+                    "level": "8",
+                    "essence": "15"
+                },
+                {
+                    "level": "9",
+                    "essence": "17"
+                },
+                {
+                    "level": "10",
+                    "essence": "19"
+                },
+                {
+                    "level": "11",
+                    "essence": "21"
+                },
+                {
+                    "level": "12",
+                    "essence": "23"
+                },
+                {
+                    "level": "13",
+                    "essence": "25"
+                },
+                {
+                    "level": "14",
+                    "essence": "27"
+                },
+                {
+                    "level": "15",
+                    "essence": "29"
+                },
+                {
+                    "level": "16",
+                    "essence": "31"
+                },
+                {
+                    "level": "17",
+                    "essence": "33"
+                },
+                {
+                    "level": "18",
+                    "essence": "35"
+                },
+                {
+                    "level": "19",
+                    "essence": "37"
+                },
+                {
+                    "level": "20",
+                    "essence": "39"
+                },
+                {
+                    "level": "21",
+                    "essence": "41"
+                },
+                {
+                    "level": "22",
+                    "essence": "43"
+                },
+                {
+                    "level": "23",
+                    "essence": "45"
+                },
+                {
+                    "level": "24",
+                    "essence": "47"
+                },
+                {
+                    "level": "25",
+                    "essence": "49"
+                }
+            ]
+        },
+        {
+            "color": "green",
+            "total": "1050",
+            "levels": [
+                {
+                    "level": "26",
+                    "essence": "30"
+                },
+                {
+                    "level": "27",
+                    "essence": "31"
+                },
+                {
+                    "level": "28",
+                    "essence": "32"
+                },
+                {
+                    "level": "29",
+                    "essence": "33"
+                },
+                {
+                    "level": "30",
+                    "essence": "34"
+                },
+                {
+                    "level": "31",
+                    "essence": "35"
+                },
+                {
+                    "level": "32",
+                    "essence": "36"
+                },
+                {
+                    "level": "33",
+                    "essence": "37"
+                },
+                {
+                    "level": "34",
+                    "essence": "38"
+                },
+                {
+                    "level": "35",
+                    "essence": "39"
+                },
+                {
+                    "level": "36",
+                    "essence": "40"
+                },
+                {
+                    "level": "37",
+                    "essence": "41"
+                },
+                {
+                    "level": "38",
+                    "essence": "42"
+                },
+                {
+                    "level": "39",
+                    "essence": "43"
+                },
+                {
+                    "level": "40",
+                    "essence": "44"
+                },
+                {
+                    "level": "41",
+                    "essence": "45"
+                },
+                {
+                    "level": "42",
+                    "essence": "46"
+                },
+                {
+                    "level": "43",
+                    "essence": "47"
+                },
+                {
+                    "level": "44",
+                    "essence": "48"
+                },
+                {
+                    "level": "45",
+                    "essence": "49"
+                },
+                {
+                    "level": "46",
+                    "essence": "50"
+                },
+                {
+                    "level": "47",
+                    "essence": "51"
+                },
+                {
+                    "level": "48",
+                    "essence": "52"
+                },
+                {
+                    "level": "49",
+                    "essence": "53"
+                },
+                {
+                    "level": "50",
+                    "essence": "54"
+                }
+            ]
+        },
+        {
+            "color": "blue",
+            "total": "790",
+            "levels": [
+                {
+                    "level": "51",
+                    "essence": "30"
+                },
+                {
+                    "level": "52",
+                    "essence": "31"
+                },
+                {
+                    "level": "53",
+                    "essence": "32"
+                },
+                {
+                    "level": "54",
+                    "essence": "33"
+                },
+                {
+                    "level": "55",
+                    "essence": "34"
+                },
+                {
+                    "level": "56",
+                    "essence": "35"
+                },
+                {
+                    "level": "57",
+                    "essence": "36"
+                },
+                {
+                    "level": "58",
+                    "essence": "37"
+                },
+                {
+                    "level": "59",
+                    "essence": "38"
+                },
+                {
+                    "level": "60",
+                    "essence": "39"
+                },
+                {
+                    "level": "61",
+                    "essence": "40"
+                },
+                {
+                    "level": "62",
+                    "essence": "41"
+                },
+                {
+                    "level": "63",
+                    "essence": "42"
+                },
+                {
+                    "level": "64",
+                    "essence": "43"
+                },
+                {
+                    "level": "65",
+                    "essence": "44"
+                },
+                {
+                    "level": "66",
+                    "essence": "45"
+                },
+                {
+                    "level": "67",
+                    "essence": "46"
+                },
+                {
+                    "level": "68",
+                    "essence": "47"
+                },
+                {
+                    "level": "69",
+                    "essence": "48"
+                },
+                {
+                    "level": "70",
+                    "essence": "49"
+                }
+            ]
+        },
+        {
+            "color": "purple",
+            "total": "555",
+            "levels": [
+                {
+                    "level": "71",
+                    "essence": "30"
+                },
+                {
+                    "level": "72",
+                    "essence": "31"
+                },
+                {
+                    "level": "73",
+                    "essence": "32"
+                },
+                {
+                    "level": "74",
+                    "essence": "33"
+                },
+                {
+                    "level": "75",
+                    "essence": "34"
+                },
+                {
+                    "level": "76",
+                    "essence": "35"
+                },
+                {
+                    "level": "77",
+                    "essence": "36"
+                },
+                {
+                    "level": "78",
+                    "essence": "37"
+                },
+                {
+                    "level": "79",
+                    "essence": "38"
+                },
+                {
+                    "level": "80",
+                    "essence": "39"
+                },
+                {
+                    "level": "81",
+                    "essence": "40"
+                },
+                {
+                    "level": "82",
+                    "essence": "41"
+                },
+                {
+                    "level": "83",
+                    "essence": "42"
+                },
+                {
+                    "level": "84",
+                    "essence": "43"
+                },
+                {
+                    "level": "85",
+                    "essence": "44"
+                }
+            ]
+        },
+        {
+            "color": "gold",
+            "total": "555",
+            "levels": [
+                {
+                    "level": "86",
+                    "essence": "30"
+                },
+                {
+                    "level": "87",
+                    "essence": "31"
+                },
+                {
+                    "level": "88",
+                    "essence": "32"
+                },
+                {
+                    "level": "89",
+                    "essence": "33"
+                },
+                {
+                    "level": "90",
+                    "essence": "34"
+                },
+                {
+                    "level": "91",
+                    "essence": "35"
+                },
+                {
+                    "level": "92",
+                    "essence": "36"
+                },
+                {
+                    "level": "93",
+                    "essence": "37"
+                },
+                {
+                    "level": "94",
+                    "essence": "38"
+                },
+                {
+                    "level": "95",
+                    "essence": "39"
+                },
+                {
+                    "level": "96",
+                    "essence": "40"
+                },
+                {
+                    "level": "97",
+                    "essence": "41"
+                },
+                {
+                    "level": "98",
+                    "essence": "42"
+                },
+                {
+                    "level": "99",
+                    "essence": "43"
+                },
+                {
+                    "level": "100",
+                    "essence": "44"
+                }
+            ]
+        }
+    ]
+}

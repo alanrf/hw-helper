@@ -1,0 +1,50 @@
+.MenuItem {
+  max-height: 35px;
+}
+
+@media (max-width: 800px) {
+  .MenuItem {
+    max-height: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.Menu {
+  width: 100%;
+  height: 94px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 94;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background-color: black;
+  border-bottom: 1px solid var(--primary);
+}
+
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+
+@media (max-width: 800px) {
+  .Menu {
+    height: 50px;
+    justify-content: center;
+    justify-content: space-between;
+    top: 50;
+  }
+
+  body {
+    --bodyPaddingTop: 50px;
+    padding-top: var(--bodyPaddingTop);
+  }
+}
