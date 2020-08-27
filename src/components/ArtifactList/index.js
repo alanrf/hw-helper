@@ -56,20 +56,20 @@ const ArtifactListContent = styled.main`
 function ArtifactList() {
     return (
         <ArtifactListContent>
-            <div id="categories" class="categories">
+            <div id="categories" className="categories">
                 {artifactsData.categories.map((category, index) => {
                     return (
-                        <div class="category" style={{ backgroundColor: category.color || 'red' }}>
-                            <label class="label">{category.color}</label>
+                        <div key={"category"+ category.color} className="category" style={{ backgroundColor: category.color || 'red' }}>
+                            <label className="label">{category.color}</label>
                             {category.levels.map((item, index) => {
                                 return (
-                                    <div class="item">
-                                        <div>{item.level}</div>
-                                        <div>{item.essence}</div>
+                                    <div className="item" key={"item"+ index}>
+                                        <label>{item.level}</label>
+                                        <label>{item.essence}</label>
                                     </div>
                                 );
                             })}
-                            <label class="label">Total: {category.total}</label>
+                            <label className="label">Total: {category.total}</label>
                         </div>
                     );
                 })}
