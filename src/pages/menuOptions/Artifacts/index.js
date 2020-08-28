@@ -19,7 +19,7 @@ function Artifacts() {
             <ArtifactContent>
                 <h1>Artifact</h1>
                 <ArtifactCalculator />
-                <ArtifactList />
+                {/* <ArtifactList /> */}
             </ArtifactContent>
         </PageDefault >
     );
