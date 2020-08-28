@@ -59,11 +59,11 @@ function ArtifactList() {
             <div id="categories" className="categories">
                 {artifactsData.categories.map((category, index) => {
                     return (
-                        <div key={"category"+ category.color} className="category" style={{ backgroundColor: category.color || 'red' }}>
+                        <div key={"category" + category.color} className="category" style={{ backgroundColor: category.color || 'red' }}>
                             <label className="label">{category.color}</label>
                             {category.levels.map((item, index) => {
                                 return (
-                                    <div className="item" key={"item"+ index}>
+                                    <div className="item" key={"item" + index}>
                                         <label>{item.level}</label>
                                         <label>{item.essence}</label>
                                     </div>

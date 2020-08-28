@@ -55,35 +55,137 @@ function ArtifactCalculator() {
         quantity: '0'
     });
 
+    const MAX_GRAY = 624;
+    const MAX_GREEN = 1050;
+    const MAX_BLUE = 790;
+    const MAX_OTHER = 555;
+
     let calculatedValue = {
         "nextLevel": 1,
-        "nextColor": 2,
-        "max": 3
+        "nextColor": 2
     };
 
-    function gray(level) {
+    function grayFormula(level) {
+        return level * 2 - 1;
+    }
+
+    function greenFormula(level) {
+        return level + 4;
+    }
+
+    function blueFormula(level) {
+        return level - 21
+    }
+
+    function purpleFormula(i) {
+        return i - 41;
+    }
+
+    function goldFormula(i) {
+        return i - 56;
+    }
+
+    function grayTotalEssencePerLevel(level) {
         let currentSum = 0;
-        // let maxColor = 
-        if (level == 2) {
-            currentSum = 3;
+        for (var i = 2; i <= level; i++) {
+            currentSum += grayFormula(i);
         }
-        if (level > 2) {
-            for (var i = 2; i <= level; i++) {
-                currentSum += level * 2 - 1;
-            }
+        return currentSum;
+    }
+
+    function greenTotalEssencePerLevel(level) {
+        let currentSum = 0;
+        for (var i = 26; i <= level; i++) {
+            currentSum += greenFormula(i);
         }
+        return currentSum;
+    }
+
+    function blueTotalEssencePerLevel(level) {
+        let currentSum = 0;
+        for (var i = 51; i <= level; i++) {
+            currentSum += blueFormula(i);
+        }
+        return currentSum;
+    }
+
+    function purpleTotalEssencePerLevel(level) {
+        let currentSum = 0;
+        for (var i = 71; i <= level; i++) {
+            currentSum += purpleFormula(i);
+        }
+        return currentSum;
+    }
+
+    function goldTotalEssencePerLevel(level) {
+        let currentSum = 0;
+        for (var i = 86; i <= level; i++) {
+            currentSum += goldFormula(i);
+        }
+        return currentSum;
+    }
+
+    function getMaxTotalAndNextLevelByColor(total, level) {
+        let max = MAX_OTHER;
+        let nextLevel = level + 1;
+
+        if (level < 25) {
+            total += grayTotalEssencePerLevel(level);
+            max = MAX_GRAY;
+            nextLevel = grayFormula(nextLevel);
+            return { nextLevel, max, total };
+        }
+
+        if (level < 50) {
+            total += greenTotalEssencePerLevel(level);
+            max = MAX_GREEN;
+            nextLevel = greenFormula(nextLevel);
+            return { nextLevel, max, total };
+        }
+
+        if (level < 70) {
+            total += blueTotalEssencePerLevel(level);
+            max = MAX_BLUE;
+            nextLevel = blueFormula(nextLevel);
+            return { nextLevel, max, total };
+        }
+
+        if (level < 85) {
+            total += purpleTotalEssencePerLevel(level);
+            nextLevel = purpleFormula(nextLevel)
+            return { nextLevel, max, total };
+        }
+
+        total += goldTotalEssencePerLevel(level);
+        nextLevel = goldFormula(level + 1);
+        return { nextLevel, max, total };
+    }
+
+    function getNextLevelAndNextColorNeeds(quantity, level) {
+        if (level >= 100) {
+            let nextLevel, nextColor = 0;
+            return { nextLevel, nextColor };
+        }
+
+        let nextLevel, nextColor, max, total;
+        ({ nextLevel, max, total } = getMaxTotalAndNextLevelByColor(quantity, level));
+        console.log("nextLevel, quantity, max, total", nextLevel, quantity, max, total);
+        if (level === 25 || level === 50 || level === 70 || level === 85) {
+            total = quantity;
+        }
+        nextColor = max - total;
+
+        return { nextLevel, nextColor };
     }
 
     function calculateValues(level, quantity) {
         let nextLevel = 0;
         let nextColor = 0;
-        let max = 0;
-        if (level < 25) {
-    
-        }
+
+        ({ nextLevel, nextColor } = getNextLevelAndNextColorNeeds(parseInt(quantity), parseInt(level)));
+
         calculatedValue.nextLevel = nextLevel;
         calculatedValue.nextColor = nextColor;
-        calculatedValue.max = max;
     }
 
     return (
@@ -96,9 +198,8 @@ function ArtifactCalculator() {
                     <label className="col label">Quantity</label>
                     <label className="col label">Next level</label>
                     <label className="col label">Next color</label>
-                    <label className="col label">Max</label>
                 </header>
-                {calculations.map((calculation, index) => (                
+                {calculations.map((calculation, index) => (
                     <div className="row" key={"row" + index}>
                         {calculateValues(calculation.level, calculation.quantity)}
                         <label className="col label gray">{calculation.hero}</label>
@@ -107,7 +208,6 @@ function ArtifactCalculator() {
                         <label className="col label gray">{calculation.quantity}</label>
                         <label className="col label gray">{calculatedValue.nextLevel}</label>
                         <label className="col label gray">{calculatedValue.nextColor}</label>
-                        <label className="col label gray">{calculatedValue.max}</label>
                     </div>
                 ))}
             </section>
